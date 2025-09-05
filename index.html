@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>My First HTML Page</title>
+    </head>
+    <body>
+        <h1>Welcome to My First HTML Page</h1>
+        <!-- Function tính tổng của 2 số -->
+        <input type="number" id="a" placeholder="Nhập số thứ nhất">
+        <input type="number" id="b" placeholder="Nhập số thứ hai">
+        <button onclick="sum()">Tính tổng</button>
+        <!-- Nhúng js code vào html -->
+        <script>
+            function sum() {
+                let a = document.getElementById("a").value;
+                let b = document.getElementById("b").value;
+                document.getElementById("result").innerHTML = sum(a, b);
+            }
+        </script>
+        <p>Kết quả: <span id="result"></span></p>
+        <!-- Nhúng js code vào html -->
+       
+
+      
+    </body>
+    <script src="main.js"></script>
+</html>
